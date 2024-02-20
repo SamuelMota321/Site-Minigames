@@ -1,0 +1,136 @@
+body{
+    text-align: center;
+    background-color: #191919;
+}
+
+h1{
+    color: white;
+}
+
+.cubo {
+
+    width: 100px;
+    height: 100px;
+    background-color:  #111;
+    border: 1px solid grey;
+    display: inline-block;
+}
+
+.o{
+    position: relative;
+}
+
+.o::after{
+    position: absolute;
+    content: "\2B55";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x{
+    position: relative;
+}
+
+.x::after{
+    position: absolute;
+    content: "\274C";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-menu {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 40%;
+    height: 40%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+#modal-box{
+    margin-top: 30px;
+}
+
+
+.btn-modal-again {
+    background-image: linear-gradient(92.88deg, #09a5ff 9.16%, rgb(0, 215, 253) 43.89%, #00f0e4 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    padding: 20px;
+    text-decoration: none; 
+
+  }
+
+  .btn-modal-again:hover {
+    box-shadow: #09c6ff 0 1px 30px;
+    transition-duration: .1s;
+  }
+
+
+.btn-modal-menu {
+  background-image: linear-gradient(92.88deg, #ff4800 9.16%, #f08000 43.89%, #fc8f00 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  padding: 20px;
+  text-decoration: none; 
+}
+
+.btn-modal-menu:hover {
+  box-shadow: #ff4800 0 1px 30px;
+  transition-duration: .1s;
+}

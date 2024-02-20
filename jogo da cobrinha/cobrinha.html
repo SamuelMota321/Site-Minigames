@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cobrinha.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Jogo da Cobrinha</title>
+
+</head>
+
+<body>
+    <div class="score">score: <span class="score-value">00</span></div>
+    <canvas width="600" height="600"></canvas>
+
+    <div class="modal-menu" id="modal-lose">
+
+        <div class="modal-content">
+
+            <h1 id="modal-title">Você perdeu!</h1>
+            <h1 id="modal-resposta-lose">Score: <span>00</span></h1>
+            <div id="modal-box">
+                <a class="btn-modal-again" href="./jogo-da-forca.html">Tentar de novo</a>
+
+                <a class="btn-modal-menu" href="../index.html">Voltar ao menu principal 
+                    <span class="material-symbols-outlined">
+                    replay
+                </span></a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/cobrinha.js"></script>
+</body>
+
+</html>

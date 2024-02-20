@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/jogo-da-memoria.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <main>
+        <header>
+            <span>Tempo: <span class="timer">00</span></span>
+        </header>
+        
+        <div class="grid"></div>
+
+
+        <div class="modal-menu" id="modal-win">
+
+            <div class="modal-content">
+    
+                <h1 id="modal-title">Você ganhou!</h1>
+                <h1 id="modal-resposta-win"> Tempo: <span>00</span></h1>
+                <div id="modal-box">
+                    <a class="btn-modal-again" href=".">Jogar de novo
+                        <span class="material-symbols-outlined">
+                            replay
+                        </span></a>
+    
+                    <a class="btn-modal-menu" href="../index.html">Voltar ao menu principal</a>
+                </div>    
+            </div>
+        </div>
+
+    </main>
+
+</body>
+<script src="./assets/js/script.js"></script>
+</html>

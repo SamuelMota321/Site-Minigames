@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forca</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+<body>
+
+    <div id="container">
+
+        <canvas id="tela" width="1000px" height="600px">
+
+        </canvas>
+
+    </div>
+
+    <div id="palavra-container"></div>
+
+
+
+    <button id="btn-start" role="button"><span class="text">Começar</span></button>
+
+    <div id="teclado">
+        <button class="tecla" onclick="adicionarLetra('A')">A</button>
+        <button class="tecla" onclick="adicionarLetra('B')">B</button>
+        <button class="tecla" onclick="adicionarLetra('C')">C</button>
+        <button class="tecla" onclick="adicionarLetra('D')">D</button>
+        <button class="tecla" onclick="adicionarLetra('E')">E</button>
+        <button class="tecla" onclick="adicionarLetra('F')">F</button>
+        <button class="tecla" onclick="adicionarLetra('G')">G</button>
+        <button class="tecla" onclick="adicionarLetra('H')">H</button>
+        <button class="tecla" onclick="adicionarLetra('I')">I</button>
+        <button class="tecla" onclick="adicionarLetra('J')">J</button>
+        <button class="tecla" onclick="adicionarLetra('K')">K</button>
+        <button class="tecla" onclick="adicionarLetra('L')">L</button>
+        <button class="tecla" onclick="adicionarLetra('M')">M</button>
+        <button class="tecla" onclick="adicionarLetra('N')">N</button>
+        <button class="tecla" onclick="adicionarLetra('O')">O</button>
+        <button class="tecla" onclick="adicionarLetra('P')">P</button>
+        <button class="tecla" onclick="adicionarLetra('Q')">Q</button>
+        <button class="tecla" onclick="adicionarLetra('R')">R</button>
+        <button class="tecla" onclick="adicionarLetra('S')">S</button>
+        <button class="tecla" onclick="adicionarLetra('T')">T</button>
+        <button class="tecla" onclick="adicionarLetra('U')">U</button>
+        <button class="tecla" onclick="adicionarLetra('V')">V</button>
+        <button class="tecla" onclick="adicionarLetra('W')">W</button>
+        <button class="tecla" onclick="adicionarLetra('X')">X</button>
+        <button class="tecla" onclick="adicionarLetra('Y')">Y</button>
+        <button class="tecla" onclick="adicionarLetra('Z')">Z</button>
+
+
+    </div>
+
+    <div class="modal-menu" id="modal-lose">
+
+        <div class="modal-content">
+
+            <h1 id="modal-title">Você perdeu!</h1>
+            <h1 id="modal-resposta-lose"></h1>
+            <div id="modal-box">
+                <a class="btn-modal-again" href="./jogo-da-forca.html">Tentar de novo</a>
+
+                <a class="btn-modal-menu" href="../index.html">Voltar ao menu principal</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal-menu" id="modal-win">
+
+        <div class="modal-content">
+
+            <h1 id="modal-title">Você ganhou!</h1>
+            <h1 id="modal-resposta-win"></h1>
+            <div id="modal-box">
+                <a class="btn-modal-again" href=".">Jogar de novo</a>
+
+                <a class="btn-modal-menu" href="../index.html">Voltar ao menu principal</a>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

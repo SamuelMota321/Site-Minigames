@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+
+    <h1>Jogo da velha</h1>
+
+    <div class ="Linha">
+
+        <div> <!-- Linha 1-->
+            <div id = "0" class = "cubo"></div>
+            <div id = "1" class = "cubo"></div>
+            <div id = "2"class = "cubo"></div>
+        </div>
+
+        <div> <!-- Linha 2-->
+            <div id = "3" class = "cubo"></div>
+            <div id = "4" class = "cubo"></div>
+            <div id = "5"class = "cubo"></div>
+        </div>
+
+        <div> <!-- Linha 3-->
+            <div id = "6" class = "cubo"></div>
+            <div id = "7" class = "cubo"></div>
+            <div id = "8"class = "cubo"></div>
+        </div>
+
+    </div>
+
+    <div class="modal-menu" id="modal-win">
+
+        <div class="modal-content">
+
+            <h1 id="modal-title">Fim de jogo</h1>
+            <h1 id="modal-winner"></h1>
+            <div id="modal-box">
+                <a class="btn-modal-again" href="./jogo-da-velha.html">Jogar de novo</a>
+
+                <a class="btn-modal-menu" href="../index.html">Voltar ao menu principal</a>
+            </div>
+
+
+        </div>
+    </div>
+    
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/interface.js"></script>
+
+</body>
+</html>
